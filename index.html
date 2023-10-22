@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Randomizer</title>
+    <meta name="description" content="TEST">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+    <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link type="text/css" rel="stylesheet"  href="./css/Randomizer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./javascript/selectWeapons.js"></script>
+    <script src="./javascript/shuffleArray.js"></script>
+    <script src="./javascript/RandomizerMain.js"></script>
+  </head>
+    <body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="intro">
+                <h1><img src="./images/misc/logo.png" alt="Lies of P" class="logo"> Weapon Randomizer</h1>
+                <div class="lineBreak">
+                    <img src="./images/misc/divider.png" alt="divider" class="butterflyDiv">
+                    <p>
+                        This is a fan-made project inspired by a random social media post about this game. <br>
+                        Select your desired weapon handles and blades from the buttons below and click spin when ready. <br>
+                        Enjoy your new weapon combination!
+                    </p>
+                    <img src="./images/misc/divider2.png" alt="divider" class="butterflyDivBottom">
+                </div>
+            </div>
+            <div class="sideBar1"></div>
+            <div class="cardsModal">
+                <!--======weapon selection buttons======-->
+            <div class="weaponButtons">
+                <button type="button" onclick="showToggle(this)" class="button1"><span class="buttonText">Handle</span></button>
+                <button type="button" onclick="showToggle(this)" class="button2"><span class="buttonText">Blade</span></button>
+            </div>
+                <!--======Handles Div======-->  
+                <div class="handles">
+                    <ul class="Choices">
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/acidiccrystalspearhandle.png" alt="" class="handleImg">
+                                </div> 
+                                <div class="weaponText">Acidic Crystal Spear Handle</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/acidicgreatcurvedswordhandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Acidic Great Curved Sword Handle</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/bigpipewrenchhandle.png" alt="" class="handleImg">
+                                </div>    
+                                <div class="weaponText">Big Pipe Wrench Handle</div>                        
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/blacksteelcutterhandle.png" alt="" class="handleImg">
+                                </div> 
+                                <div class="weaponText">Black Steel Cutter Handle</div>
+                                            
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/blindmansdoublesidedspearhandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Blindman's Double-Sided Spear Handle</div>
+                                
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/bonecuttinghandleweaponhandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Bone-Cutting Handle</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/boosterglaivehandleweaponhandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Boosted Glaive Handle</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/bramblecurvedswordhandleweaponhandle.png" alt="" class="handleImg">
+                                </div>    
+                                <div class="weaponText">Bramble Curved Sword Handle</div>          
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/carcasscrystalaxehandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Carcass Crystal Axe Handle</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/circularelectricchainsawhandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Circular Electric Chainsaw Handle</div> 
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/citylongspearhandleweaponhandle.png" alt="" class="handleImg">
+                                </div>   
+                                <div class="weaponText">City Longspear Handle</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/clockswordhandleweaponhandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Clock Sword Handle</div>                            
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/coilmjolnirweaponhandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Coil Mjolnir Handle</div>                            
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/cursedknightshalberdweaponhandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Cursed Knight's Halberd Handle</div>                            
+                            </button>
+                        </li> 
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/dancerscurvedswordweaponhandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Dancer's Curved Sword Handle</div>                            
+                            </button>
+                        </li> 
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/electriccoilstickhandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Electric Coil Stick Handle</div>                            
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/explodingpickaxeweaponhandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Exploding Pickaxe Handle</div>                            
+                            </button>
+                        </li> 
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/fireaxehandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Fire Axe Handle</div>                            
+                            </button>
+                        </li> 
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images//handle/greatswordoffateweaponhandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Greatsword of Fate Handle</div>                            
+                            </button>
+                        </li> 
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/kratpolicebatonweaponhandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Krat Police Baton Handle</div>                            
+                            </button>
+                        </li>                                    
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/livepuppetsaxeweaponhandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Live Puppet's Axe Handle</div>                            
+                            </button>
+                        </li> 
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/masterchefsknifeweaponhandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Master Chef's Knife Handle</div>                            
+                            </button>
+                        </li> 
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/pistolrockdrillweaponhandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Pistol Rock Drill Handle</div>                            
+                            </button>
+                        </li> 
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/puppetssaberhandleweaponhandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Puppet's Saber Handle</div>                            
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/salamanderdaggerweaponhandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Salamander Dagger Handle</div>                            
+                            </button>
+                        </li> 
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/spearofhonorweaponhandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Spear of Honor Handle</div>                            
+                            </button>
+                        </li> 
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/tyrantmurderersweaponhandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Tyrant Murder's Dagger Handle</div>                            
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="handleChoice" onclick="selectHandles(this)">
+                                <div class="handleModal">
+                                    <img src="./images/handle/wintryrapiersweaponhandle.png" alt="" class="handleImg">
+                                </div>
+                                <div class="weaponText">Wintry Rapier's Handle</div>                            
+                            </button>
+                        </li>  
+                    </ul>
+                    <div class="hAll">
+                        <button type="button" class="sAll" onclick="selectAll(this)">
+                        <div class="bContents">
+                            <i class="bi bi-check-square"></i>
+                            <span>Select All</span></div>
+                        </button>
+                        <button type="button" class="sAll" onclick="deSelectAll(this)">
+                        <div class="bContents">
+                            <i class="bi bi-app"></i>
+                            <span>Deselect All</span></div>
+                        </button>
+                    </div>
+                </div>
+                <!--======Blades div======-->
+                <div class="blades">
+                    <ul class="Choices">
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/acidiccrystalspearblade.png" alt="" class="bladeImg">
+                                </div>    
+                                <div class="weaponText">Acidic Crystal Spear Head</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/acidicgreatcurvedswordblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Acidic Great Curved Sword Blade</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/bigpipewrenchhead.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Big Pipe Wrench Head</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/blacksteelcutterblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Black Steel Cutter Blade</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/blindmansdoublesidedspearblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Blind Man's Double-Sided Spear Head</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/bonecuttingsawblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Bone-Cutting Sawblade</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/boosterglaiveblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Booster Glaive Blade</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/bramblecurvedswordblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Bramble Curved Sword Blade</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/carcasscrystalaxe-blade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Carcass Crystal Axe Head</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/circularelectricchainsawblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Circule Elextric Chainsaw Blade</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/citylongspearblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">City Long Spear Head</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/clockswordblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Clock Sword Blade</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/coilmjolnirheadbladeweapon.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Coil Mjolnir Head</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/cursedknightshalberdweaponblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Cursed Knight's Halberd Blade</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/dancerscurvedswordweaponblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Dancer's Curved Sword Blade</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/electriccoilstickheadweaponblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Electric Coil Stick Head</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/explodingpickaxeweaponblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Exploding Pickaxe Head</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/fireaxehead.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Fire Axe Head</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/greatswordoffateweaponblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Greatsword of Fate Blade</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/kratpolicebatonheadweaponblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Krat Police Batton Head</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/livepuppetsaxeweaponblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Live Puppet's Axe Head</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/masterchefsknifeweaponblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Master Chef's Knife Blade</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/militaryshovelweaponblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Military Shovel Head</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/pistolrockdrillweaponblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Pistol Rock Drill Head</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/puppetssaberweaponblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Puppet's Saber Blade</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/salamanderdaggerweaponblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Salamander Dagger Blade</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/spearofhonorweaponblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Spear of Honor Head</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/tyrantmurderersdaggerweaponblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Tyrant Murder's Dagger Blade</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="bladeChoice" onclick="selectBlades(this)">
+                                <div class="bladeModal">
+                                    <img src="./images/head/wintryrapiersweaponblade.png" alt="" class="bladeImg">
+                                </div>
+                                <div class="weaponText">Wintry Rapier's Blade</div>
+                            </button>
+                        </li>        
+                    </ul>
+                    <div class="bAll">
+                        <button type="button" class="sAll" onclick="selectAll(this)">
+                        <div class="bContents">
+                            <i class="bi bi-check-square"></i>
+                            <span>Select All</span>
+                        </div> 
+                        </button>
+                        <button type="button" class="sAll" onclick="deSelectAll(this)">
+                        <div class="bContents">
+                            <i class="bi bi-app"></i>
+                            <span>Deselect All</span> 
+                        </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="slotModal">
+                <div class="slot">
+                    <div class="reel1">
+                        <div class="boxes1">
+                            <!-- <div class="box">?</div> -->
+                        </div>
+                    </div>
+                <div class="plusSign"><span>+</span></div>
+                    <div class="reel2" >
+                        <div class="boxes2">
+                            <!-- <div class="box">?</div> -->
+                        </div>      
+                    </div>      
+                </div>
+                <div id="spinStart">
+                    <button type="button" onclick="spin()" class="spinButton">
+                    <span class="spinText">Spin</span></button>
+                </div>
+            </div>
+            <div class="sideBar2"></div>
+            <footer class="footerInfo">
+                All Lies of P material is by ©Neowiz Games and ©Round8 Studios. 
+                This is a non-profit site with no affiliation to ©Neowiz Games and ©Round8 Studios.
+                Website and scripting done by <a href="url">HauntedVCR</a>
+            </footer>
+            <!--TODO: PUT THE GITHUB REPO LINK INTO THE ANCHOR-->
+        </div>
+</div>
+</body>
+    <script>
+        $( window ).on( "load", init );
+    </script>
+</html>
