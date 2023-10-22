@@ -254,7 +254,8 @@ li{
     top: 7px;
     display: grid;
     justify-items: center;
-    grid-template-columns: 1fr;
+    width: 75%;
+    height: auto;
 }
 
 
