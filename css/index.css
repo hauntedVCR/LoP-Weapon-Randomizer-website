@@ -1,7 +1,7 @@
 @media only screen and (min-width: 768px) {
 
     .sideBar1{
-        background:url(../images/misc/sidebar1.jpg) no-repeat;
+        background:url(../images/misc/sidebar2.jpg) no-repeat;
         background-size: auto 100%;
         background-attachment: fixed;
         background-position: left;
@@ -10,7 +10,7 @@
     
    .sideBar2{
         
-        background: url(../images/misc/sidebar4.jpg) no-repeat;
+        background: url(../images/misc/sidebar1.jpg) no-repeat;
         background-attachment: fixed;
         background-size: auto 100%;
         background-position: right;
