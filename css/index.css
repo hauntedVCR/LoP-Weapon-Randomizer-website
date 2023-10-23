@@ -1,3 +1,24 @@
+@media only screen and (min-width: 768px) {
+
+    .sideBar1{
+        background:url(../images/misc/sidebar1.jpg) no-repeat;
+        background-size: auto 100%;
+        background-attachment: fixed;
+        background-position: left;
+        
+    }
+    
+   .sideBar2{
+        
+        background: url(../images/misc/sidebar4.jpg) no-repeat;
+        background-attachment: fixed;
+        background-size: auto 100%;
+        background-position: right;
+       
+    }
+}
+
+
 *{
     font-family: "EB Garamond",Times, serif;
 }
@@ -127,25 +148,10 @@ li{
     grid-row: 1/5;
 }
 
-.sideBar1{
-    background:url(../images/misc/sidebar1.png) no-repeat;
-    background-size: auto 100%;
-    background-attachment: fixed;
-    background-position: left;
-    
-}
-
 .sideBar2{
     grid-column: 3;
-    background: url(../images/misc/sidebar4.png) no-repeat;
-    background-attachment: fixed;
-    background-size: auto 100%;
-    background-position: right;
    
 }
-
-
-
 /*=====Card box stuff======*/
 .cardsModal{
     text-align: center;
@@ -251,7 +257,6 @@ li{
 
 .handleModal,.bladeModal{
     position: relative;
-    top: 7px;
     display: grid;
     justify-items: center;
     width: 75%;
@@ -337,7 +342,7 @@ li{
     align-items: flex-start;
     justify-content: center;
     grid-column: 2;
-    background: url(../images/misc/wooden_box.png) no-repeat;
+    background: url(../images/misc/wooden_box.jpg) no-repeat;
     background-size: 100% 425px;
     height: 425px;
     margin-bottom: 25px;
