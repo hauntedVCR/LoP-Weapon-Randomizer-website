@@ -10,7 +10,7 @@
     
    .sideBar2{
         
-        background: url(../images/misc/sidebar4.jpg) no-repeat;
+        background: url(../images/misc/sidebar2.jpg) no-repeat;
         background-attachment: fixed;
         background-size: auto 100%;
         background-position: right;
@@ -60,6 +60,11 @@ li{
     width: 125px;
 
 }
+
+a{
+    color: rgb(127, 137, 213);
+}
+
 
 button{
     cursor: pointer;
