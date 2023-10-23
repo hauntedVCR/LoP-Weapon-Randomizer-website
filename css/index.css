@@ -72,6 +72,10 @@ li{
 button{
     cursor: pointer;
 }
+
+a{
+    color: color: #7f89d5;
+}
 /*====Footer options=====*/
 
 .footerInfo{
