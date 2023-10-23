@@ -166,7 +166,7 @@ button{
 }
 
 .weaponButtons{
-    background: url(../images/misc/box_lid.png) no-repeat;
+    background: url(../images/misc/box_lid.jpg) no-repeat;
     background-size: cover;
     height: 34px;
     padding: 45px;
@@ -231,7 +231,7 @@ button{
     padding:15px 0px;
     max-width: 100%;
     width: 100%;
-    background:url(../images/misc/wallpaper.png) no-repeat center;
+    background:url(../images/misc/wallpaper.jpg) no-repeat center;
     background-size: cover;
     border-image-source: url(../images/misc/frame.png);
     border-image-slice: 33% 33% 33% 33%;
