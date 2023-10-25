@@ -1,7 +1,7 @@
 @media only screen and (min-width: 768px) {
 
     .sideBar1{
-        background:url(../images/misc/sidebar2.jpg) no-repeat;
+        background:url(../images/assets/sidebar2.jpg) no-repeat;
         background-size: auto 100%;
         background-attachment: fixed;
         background-position: left;
@@ -10,7 +10,7 @@
     
    .sideBar2{
         
-        background: url(../images/misc/sidebar1.jpg) no-repeat;
+        background: url(../images/assets/sidebar1.jpg) no-repeat;
         background-attachment: fixed;
         background-size: auto 100%;
         background-position: right;
@@ -178,7 +178,7 @@ a{
 }
 
 .weaponButtons{
-    background: url(../images/misc/box_lid.jpg) no-repeat;
+    background: url(../images/assets/box_lid.jpg) no-repeat;
     background-size: 100% auto;
     height: 34px;
     padding: 45px;
@@ -192,7 +192,7 @@ a{
 
 
 .button1,.button2{
-    background: url(../images/misc/button2.png) no-repeat center;
+    background: url(../images/assets/button2.png) no-repeat center;
     border: none;
     background-size: 100% 50px;
     height: 50px;
@@ -243,9 +243,9 @@ a{
     padding:15px 0px;
     max-width: 100%;
     width: 100%;
-    background:url(../images/misc/wallpaper.jpg) no-repeat;
+    background:url(../images/assets/wallpaper.jpg) no-repeat;
     background-size: 100% auto;
-    border-image-source: url(../images/misc/frame.png);
+    border-image-source: url(../images/assets/frame.png);
     border-image-slice: 33% 33% 33% 33%;
     border-image-width:3.5em;
     border-image-repeat: stretch;
@@ -262,7 +262,7 @@ a{
     flex-direction: column;
     justify-content: flex-start;
     justify-items: center;
-    background: url(../images/misc/card_border.png) no-repeat center;
+    background: url(../images/assets/card_border.png) no-repeat center;
     background-size: 100% 100%;
     cursor: pointer;
     height: auto;
@@ -320,7 +320,7 @@ a{
 /*====Card Buttons=====*/
 
 .sAll{
-    background: url(../images/misc/button1.png) no-repeat center;
+    background: url(../images/assets/button1.png) no-repeat center;
     background-size: 100% auto;
     border: none;
     margin: 5px;
@@ -357,7 +357,7 @@ a{
     align-items: flex-start;
     justify-content: center;
     grid-column: 2;
-    background: url(../images/misc/wooden_box.jpg) no-repeat;
+    background: url(../images/assets/wooden_box.jpg) no-repeat;
     background-size: 100% 425px;
     height: 425px;
     margin-bottom: 25px;
@@ -429,7 +429,7 @@ a{
     display: inline-flex;
     align-items: center;
     border: none;
-    background: url(../images/misc/button2.png) no-repeat center;
+    background: url(../images/assets/button2.png) no-repeat center;
     background-size: 100% 50px;
     height: 80px;
     width: 14%;
